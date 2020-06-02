@@ -1,0 +1,174 @@
+
+*{
+padding: 0px;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+body {
+font-family: Montserrat;
+}
+nav {
+background: rgb(60, 158, 204);
+height: 80px;
+width: 100%;
+display: flex;
+justify-content:space-between;
+}
+
+label.logo{
+    color:whitesmoke;
+    font-size: 35px;
+    line-height: 70px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul li{
+    display: inline-block;
+    margin : 20px 5px
+}
+nav ul li a{
+        color:whitesmoke;
+        font-size: 17px;
+        text-transform: uppercase;
+        padding: 7px 13px;
+        border-radius: 3px;
+}
+  
+a.active,a:hover{
+        background:rgb(60, 139, 204);
+        transition: .5s;
+}
+nav ul{
+float: right;
+margin-right: 20px;
+}
+.checkbtn{
+font-size:larger;
+color: whitesmoke;
+float: right;
+line-height:60px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+main {
+    display: grid;
+    }
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}   
+div.titre{
+    background: rgb(60, 158, 204);
+    text-align: center;
+    margin: 10px;
+    }
+footer{
+        background:plum;
+        text-align: center;
+        margin: 10px;
+        }
+.Box1{
+    background: beige;
+    padding: 10px;
+    margin: 10px;
+    grid-row: 1/2;
+    }
+.Box2{
+        background: rgb(231, 220, 245);
+        padding: 10px;
+        grid-row: 1/2;
+        margin: 10px;
+    } 
+.Box3{
+            background: rgb(161, 61, 72);
+            padding: 10px;
+            grid-row: 1/2;
+            margin: 10px;
+    }
+.Box4{
+            background: rgb(61, 161, 74);
+            padding: 10px;
+            margin: 10px;
+            grid-column: 1/5;
+     }
+
+div p{
+    text-align: justify;
+}
+
+div h4{
+    text-align: justify;
+}
+.Box1 img{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.Box2 img{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.Box3 img{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.Box4 img{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+@media (max-width: 952px) {
+label.logo{
+font-size: 30px;
+padding-left: 50px;
+ }
+nav ul li a{
+font-size: 15px;
+}
+@media (max-width: 800px) {
+.checkbtn{
+    display: block;
+}
+ul{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background: rgb(60, 158, 204);
+    top: 80px;
+    left:-100%;
+    text-align: center;
+    transition : all .5s
+}
+a:hover,a.active{
+    background: none;
+    color:chocolate;
+    }
+#check:checked ~ ul {
+    left: 0;
+     }
+nav ul li {
+display: block;
+margin:50px 0;
+line-height: 30px;
+}
+nav ul li a{
+font-size: 20px;
+}
+}
